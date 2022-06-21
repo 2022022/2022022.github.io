@@ -4,9 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="小吴同学">
-    <meta name="description" content="git连接gitee(码云)[TOC]
-一直想使用git来托管代码 以为对命令行不在行，怎么也没整好，网上看了很多教程也毫无头绪，后面在同事的帮助下完成了配置，希望分享出来对大家有帮助。这里先介绍windows的教程，后面结束再介绍mac，">
+    <meta name="keywords" content="前端通信Ajax, 小吴同学">
+    <meta name="description" content="坚硬的城市没有柔软的爱情,生活不是林黛玉,不是因为忧伤就可以风情万种.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +19,7 @@
 
     
 
-    <title>小吴同学</title>
+    <title>前端通信Ajax | 小吴同学</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -313,12 +312,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">前端通信Ajax</h1>
                 </div>
             </div>
         </div>
@@ -470,45 +469,153 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="git连接gitee-码云"><a href="#git连接gitee-码云" class="headerlink" title="git连接gitee(码云)"></a>git连接gitee(码云)</h1><p>[TOC]</p>
-<p>一直想使用git来托管代码 以为对<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E5%91%BD%E4%BB%A4%E8%A1%8C&amp;spm=1001.2101.3001.7020">命令行</a>不在行，怎么也没整好，网上看了很多教程也毫无头绪，后面在同事的帮助下完成了配置，希望分享出来对大家有帮助。这里先介绍windows的教程，后面结束再介绍mac，mac位置跳转</p>
-<h1 id="准备工作："><a href="#准备工作：" class="headerlink" title="准备工作："></a><strong>准备工作：</strong></h1><p>1.去官网下载git，下载过后安装一直下一步到安装完成为止即可。</p>
-<p>2.去码云官网注册账号：<a target="_blank" rel="noopener" href="https://gitee.com/jmgg/events">https://gitee.com/jmgg/events</a></p>
-<h1 id="初始化："><a href="#初始化：" class="headerlink" title="初始化："></a><strong>初始化：</strong></h1><h2 id="1-准备一个文件夹（也可以是你的项目）用来创建git如图："><a href="#1-准备一个文件夹（也可以是你的项目）用来创建git如图：" class="headerlink" title="1.准备一个文件夹（也可以是你的项目）用来创建git如图："></a><strong>1.准备一个文件夹（也可以是你的项目）用来创建git如图：</strong></h2><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/948d77d184ad4c22a657303430686313~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="00421590b3b8c5c840336b349516e97.png"></p>
-<h2 id="2-点击进入文件夹，然后右击鼠标，会看见如图：（选择-Git-Bash-Here）"><a href="#2-点击进入文件夹，然后右击鼠标，会看见如图：（选择-Git-Bash-Here）" class="headerlink" title="2.点击进入文件夹，然后右击鼠标，会看见如图：（选择 Git Bash Here）"></a>2.点击进入文件夹，然后右击鼠标，会看见如图：（选择 Git Bash Here）</h2><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/18fbc7ffe8c84552b19c89789c0404d5~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="01dce27715df414454cc9b41cb1d592.png"></p>
-<h2 id="3-会看见下面界面："><a href="#3-会看见下面界面：" class="headerlink" title="3.会看见下面界面："></a>3.会看见下面界面：</h2><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0e5c35b631f6462ea990ad622542c070~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="53dbcc8b1c321472616c26bb17566b3.png"></p>
-<p>4.刚开始我们要在本地生成一个密钥，让他和码云上面的密钥产生关联。生产密钥的的命令行</p>
-<h2 id="ssh-keygen-t-rsa-C-“-x32-56-x36-48-x33-x37-49-52-57-53-64-113-113-46-x63-x6f-109-“-邮箱地址可以填自己的。效果如图所示："><a href="#ssh-keygen-t-rsa-C-“-x32-56-x36-48-x33-x37-49-52-57-53-64-113-113-46-x63-x6f-109-“-邮箱地址可以填自己的。效果如图所示：" class="headerlink" title="ssh-keygen -t rsa -C “2860371495@qq.com“  邮箱地址可以填自己的。效果如图所示："></a>ssh-keygen -t rsa -C “<a href="mailto:2860371495@qq.com">2860371495@qq.com</a>“  邮箱地址可以填自己的。效果如图所示：</h2><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c61770419299474a8ea26c3e1dec930d~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="6ca11593cab5d869d06a44fac595651.jpg"></p>
-<h2 id="5-一直回车，以为我以前申请过了，所以提示可能不一样，只要一直回车到绿色的字体显示为止："><a href="#5-一直回车，以为我以前申请过了，所以提示可能不一样，只要一直回车到绿色的字体显示为止：" class="headerlink" title="5.一直回车，以为我以前申请过了，所以提示可能不一样，只要一直回车到绿色的字体显示为止："></a>5.一直回车，以为我以前申请过了，所以提示可能不一样，只要一直回车到绿色的字体显示为止：<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bba7f5cd9fa2459498b543b58735bb91~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="80688cc0feddf62e783d4b08ca86cf7.jpg"></h2><h2 id="6-现在输入命名来查看自己生产的密钥，cat-ssh-id-rsa-pub-效果如图："><a href="#6-现在输入命名来查看自己生产的密钥，cat-ssh-id-rsa-pub-效果如图：" class="headerlink" title="6.现在输入命名来查看自己生产的密钥，cat ~/.ssh/id_rsa.pub  效果如图："></a>6.现在输入命名来查看自己生产的密钥，cat ~/.ssh/id_rsa.pub  效果如图：</h2><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b266b8690fd340908e686d2feb247250~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="9138302d63dc3bfba5949587a6ccc70.jpg"></p>
-<h1 id="gitee里面的操作："><a href="#gitee里面的操作：" class="headerlink" title="gitee里面的操作："></a>gitee里面的操作：</h1><h2 id="7-将密钥复制到码云的密钥上面去，下面按照图的顺序操作即可："><a href="#7-将密钥复制到码云的密钥上面去，下面按照图的顺序操作即可：" class="headerlink" title="7.将密钥复制到码云的密钥上面去，下面按照图的顺序操作即可："></a>7.将密钥复制到码云的密钥上面去，下面按照图的顺序操作即可：</h2><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bf9e574d840145eca1f043e7d7b366f6~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="572c68e460423e2d3aec8cd4c9a26f2.png"></p>
-<p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/75795aca212943128e9409769247fffa~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="0014ff68bb529f8034a8b2f4cc7ce52.png"></p>
-<p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0fe6dadc4e9840d38de5f305ca7f2492~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="3d3d8c700bd8d614f54959fefe89bf6.png"></p>
-<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d124793bfb194c199d25ea935f7b4d09~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="6ceccf072ae4f33f4c3424655203a9e.png"></p>
-<h2 id="8-在码云上添加项目-首页："><a href="#8-在码云上添加项目-首页：" class="headerlink" title="8.在码云上添加项目 首页："></a>8.在码云上添加项目 首页：</h2><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e1c544da18bd47f286a852b1d9c6639d~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="2f41d4ad2dbefdc8303b4ff9dc9f074.png"></p>
-<h2 id="9-根据自己的需求点击创建即可："><a href="#9-根据自己的需求点击创建即可：" class="headerlink" title="9.根据自己的需求点击创建即可："></a>9.根据自己的需求点击创建即可：</h2><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/82454d646a7a4f3c8eeaa1ad73963bf7~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="5517c9fb76819ad2efd3324e3979a7f.png"></p>
-<h2 id="10-创建成功跳转过后，点击克隆下载，然后复制ssh的地址如图：（后面会用到地址）"><a href="#10-创建成功跳转过后，点击克隆下载，然后复制ssh的地址如图：（后面会用到地址）" class="headerlink" title="10.创建成功跳转过后，点击克隆下载，然后复制ssh的地址如图：（后面会用到地址）"></a>10.创建成功跳转过后，点击克隆下载，然后复制ssh的地址如图：（后面会用到地址）</h2><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/df2d788779074048ba7acfb11764bf7a~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="bff80dab8fe917f85686a4e0f361ad5.png"></p>
-<p>上面步骤不较多，按照顺序来就没错。</p>
-<p>11.在命名行中定义两个全局变量，一个邮箱，一个name 上传到码云的时候会用到，命令如下：</p>
-<p>git config –global user.email “<a href="mailto:2860371495@qq.com">2860371495@qq.com</a>“</p>
-<p>回车过后会出现绿色的字体然后再输入：</p>
-<p>git config –global user.name “username”</p>
-<p>邮箱用自己的，名字也可以自己取，没影响</p>
-<h1 id="第一次上传代码到git："><a href="#第一次上传代码到git：" class="headerlink" title="第一次上传代码到git："></a>第一次上传代码到git：</h1><h2 id="1-重新打开test文件夹（项目文件夹也行），然后右击鼠标，会看见如图：（选择-Git-Bash-Here）"><a href="#1-重新打开test文件夹（项目文件夹也行），然后右击鼠标，会看见如图：（选择-Git-Bash-Here）" class="headerlink" title="1.重新打开test文件夹（项目文件夹也行），然后右击鼠标，会看见如图：（选择 Git Bash Here）"></a>1.重新打开test文件夹（项目文件夹也行），然后右击鼠标，会看见如图：（选择 Git Bash Here）</h2><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0c6487fd5b69403e8a94ecce9eb9099e~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="65f874f84e1f971477dfec23386b49f.png"></p>
-<h2 id="2-输入初始化命令-git-init-回车-效果如图："><a href="#2-输入初始化命令-git-init-回车-效果如图：" class="headerlink" title="2.输入初始化命令 git init 回车 效果如图："></a>2.输入初始化命令 git init 回车 效果如图：</h2><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c51380b4a2c7418ba9087ca4b6ab543f~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="e05d9f64774bc21d574219d371042ec.png"></p>
-<h2 id="3-输入要链接到码云的地址，（第10部我们复制的地址）git-remote-add-origin-x67-x69-116-64-x67-x69-116-x65-x65-x2e-99-111-x6d-jmgg-Test2-git-回车-如图："><a href="#3-输入要链接到码云的地址，（第10部我们复制的地址）git-remote-add-origin-x67-x69-116-64-x67-x69-116-x65-x65-x2e-99-111-x6d-jmgg-Test2-git-回车-如图：" class="headerlink" title="3.输入要链接到码云的地址，（第10部我们复制的地址）git remote add origin git@gitee.com:jmgg/Test2.git 回车 如图："></a>3.输入要链接到码云的地址，（第10部我们复制的地址）git remote add origin <strong><a href="mailto:git@gitee.com">git@gitee.com</a>:jmgg/Test2.git</strong> 回车 如图：</h2><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7c1736ddfee8414f98b8dcf03875437b~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="c7e39a5f0aacfff9e960f298e92932c.png"></p>
-<h2 id="4-拉取码云上的所有文件到项目中来，git-pull-origin-master"><a href="#4-拉取码云上的所有文件到项目中来，git-pull-origin-master" class="headerlink" title="4.拉取码云上的所有文件到项目中来，git pull origin master"></a>4.拉取码云上的所有文件到项目中来，git pull origin master</h2><p>以后如果想在其他电脑上拿去上传了的文件，只需要做这四部操作即可。如图：</p>
-<p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1d400a04bfbb4fee9a1aa5a599bfb41d~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="6d2e7ff8fe7944cd8b82dbc0790a0ba.png"></p>
-<p>查看文件夹发现多了文件：多的是码云上面的，可以自己查看下</p>
-<p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c3348788b10540219cf69b9ecc01244f~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="ae3443eccda1746ffc56a87d4c64e74.png"></p>
-<h2 id="5-在test目录中创建一个文本文档，用来测试是否真的上传成功："><a href="#5-在test目录中创建一个文本文档，用来测试是否真的上传成功：" class="headerlink" title="5.在test目录中创建一个文本文档，用来测试是否真的上传成功："></a>5.在test目录中创建一个文本文档，用来测试是否真的上传成功：</h2><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/20eb8ecf0ab845209846b06899ca3492~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="9745e4dd5c2c0af621040aa9847ed65.png"></p>
-<h2 id="6-在命令行中继续输入代码执行-git-add-add空格后有个点别忘了-："><a href="#6-在命令行中继续输入代码执行-git-add-add空格后有个点别忘了-：" class="headerlink" title="6.在命令行中继续输入代码执行  git add .  (add空格后有个点别忘了) ："></a>6.在命令行中继续输入代码执行  git add .  (add空格后有个点别忘了) ：</h2><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5ad5be3e04814006bb2589ee9fe8979d~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="49f78938a92bcd7153dbbe9dfd48ab2.png"></p>
-<h2 id="7-添加注释，来说明自己为什么要上传，方便以后自己查阅-git-commit-m-“第一次上传”"><a href="#7-添加注释，来说明自己为什么要上传，方便以后自己查阅-git-commit-m-“第一次上传”" class="headerlink" title="7.添加注释，来说明自己为什么要上传，方便以后自己查阅 git commit -m “第一次上传”"></a>7.添加注释，来说明自己为什么要上传，方便以后自己查阅 git commit -m “第一次上传”</h2><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7d97497349454cc7b6ba0aaf8e456c88~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="6519b88bafc10f80da1f384377143d0.png"></p>
-<h2 id="8-提交到码云上面，git-push-origin-master"><a href="#8-提交到码云上面，git-push-origin-master" class="headerlink" title="8.提交到码云上面，git push origin master"></a>8.提交到码云上面，git push origin master</h2><p>因为是第一次提交，要更改为：git push -u origin master 第二次提交就按照上面的写法即可</p>
-<p>不在需要加 -u  ：</p>
-<p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7978dbdb909c4351b5f1a61a9e58f0f2~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="eb2750b346b90584b9d4475e3f37e4f.png"></p>
-<h2 id="如果这样显示就正面上传完成，可以打开码云看看是否正确。"><a href="#如果这样显示就正面上传完成，可以打开码云看看是否正确。" class="headerlink" title="如果这样显示就正面上传完成，可以打开码云看看是否正确。"></a>如果这样显示就正面上传完成，可以打开码云看看是否正确。</h2><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8b0d1af3c474479091a6c0dfe245274d~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="9de72b417f9d61e1a7efb3ecbeb7993.png"></p>
-<p>上面已经说了如果是将码云上面的项目搞到其他电脑上就执行1-4个步骤就行，当然还有更简单的方法，这里就不说了。</p>
-<p>这是这个项目的第一次提交。如果还要进行第二次提交就可以直接执行6-8步骤即可。记住第八步是没有 -u 的。</p>
+                <ul>
+<li><h1 id="前端通信Ajax"><a href="#前端通信Ajax" class="headerlink" title="前端通信Ajax"></a>前端通信Ajax</h1></li>
+<li><h2 id="同源策略"><a href="#同源策略" class="headerlink" title="同源策略"></a><strong>同源策略</strong></h2></li>
+</ul>
+<p>同源策略限制从一个源加载的文档或脚本如何与来自另一个源的资源进行交互。这是一个用于隔离潜在恶意文件的关键安全机制。</p>
+<p>什么是源：协议、域名与端口。这三者任何一个不一样的话，就算是跨域</p>
+<p>什么是限制：不是一个源的文档，没有权限去操作另一个源的文档</p>
+<pre class="line-numbers language-undefined" data-language="undefined"><code class="language-undefined">Cookie、LocalStorage 和 IndexDB无法读取。
+Dom无法获得
+Ajax请求不能发送<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li><h2 id="前后端通信方式"><a href="#前后端通信方式" class="headerlink" title="前后端通信方式"></a><strong>前后端通信方式</strong></h2></li>
+</ul>
+<ol>
+<li><h3 id="Ajax-支持同源通信"><a href="#Ajax-支持同源通信" class="headerlink" title="Ajax 支持同源通信"></a>Ajax 支持同源通信</h3></li>
+<li><h3 id="WebSocket-不受同源策略影响"><a href="#WebSocket-不受同源策略影响" class="headerlink" title="WebSocket 不受同源策略影响"></a>WebSocket 不受同源策略影响</h3></li>
+<li><h3 id="CORS-既支持同源通信也支持跨域通信"><a href="#CORS-既支持同源通信也支持跨域通信" class="headerlink" title="CORS 既支持同源通信也支持跨域通信"></a>CORS 既支持同源通信也支持跨域通信</h3></li>
+</ol>
+<ul>
+<li><strong>如何创建ajax</strong></li>
+</ul>
+<pre class="line-numbers language-typescript" data-language="typescript"><code class="language-typescript">util<span class="token punctuation">.</span><span class="token function-variable function">json</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>options<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">var</span> opt <span class="token operator">=</span> <span class="token punctuation">{</span>
+         url<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+         type<span class="token operator">:</span> <span class="token string">'get'</span><span class="token punctuation">,</span>
+         data<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+         <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+         <span class="token function-variable function">error</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+     <span class="token punctuation">}</span><span class="token punctuation">;</span>
+     util<span class="token punctuation">.</span><span class="token function">extend</span><span class="token punctuation">(</span>opt<span class="token punctuation">,</span> options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token keyword">if</span> <span class="token punctuation">(</span>opt<span class="token punctuation">.</span>url<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         <span class="token keyword">var</span> xhr <span class="token operator">=</span> XMLHttpRequest
+            <span class="token operator">?</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">ActiveXObject</span><span class="token punctuation">(</span><span class="token string">'Microsoft.XMLHTTP'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token keyword">var</span> data <span class="token operator">=</span> opt<span class="token punctuation">.</span>data<span class="token punctuation">,</span>
+             url <span class="token operator">=</span> opt<span class="token punctuation">.</span>url<span class="token punctuation">,</span>
+             type <span class="token operator">=</span> opt<span class="token punctuation">.</span>type<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+             dataArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+         <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> k <span class="token keyword">in</span> data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+             dataArr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>k <span class="token operator">+</span> <span class="token string">'='</span> <span class="token operator">+</span> data<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token punctuation">}</span>
+         <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'GET'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+             url <span class="token operator">=</span> url <span class="token operator">+</span> <span class="token string">'?'</span> <span class="token operator">+</span> dataArr<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">'&amp;'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+             xhr<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span>type<span class="token punctuation">,</span> url<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\?$</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+             xhr<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token punctuation">}</span>
+         <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'POST'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+             xhr<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span>type<span class="token punctuation">,</span> url<span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+             xmlhttp<span class="token punctuation">.</span><span class="token function">setRequestHeader</span><span class="token punctuation">(</span><span class="token string">'Content-type'</span><span class="token punctuation">,</span> <span class="token string">'application/x-www-form-urlencoded'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+             xhr<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span>dataArr<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">'&amp;'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token punctuation">}</span>
+         xhr<span class="token punctuation">.</span><span class="token function-variable function">onload</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+             <span class="token keyword">if</span> <span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>status <span class="token operator">===</span> <span class="token number">200</span> <span class="token operator">||</span> xhr<span class="token punctuation">.</span>status <span class="token operator">===</span> <span class="token number">304</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">var</span> res<span class="token punctuation">;</span>
+                 <span class="token keyword">if</span> <span class="token punctuation">(</span>opt<span class="token punctuation">.</span>success <span class="token operator">&amp;&amp;</span> opt<span class="token punctuation">.</span>success <span class="token keyword">instanceof</span> <span class="token class-name"><span class="token builtin">Function</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                     res <span class="token operator">=</span> xhr<span class="token punctuation">.</span>responseText<span class="token punctuation">;</span>
+                     <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> res <span class="token operator">===</span> <span class="token string">'string'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                         res <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                         opt<span class="token punctuation">.</span><span class="token function">success</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>xhr<span class="token punctuation">,</span> res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                     <span class="token punctuation">}</span>
+                 <span class="token punctuation">}</span>
+             <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+
+                 <span class="token keyword">if</span> <span class="token punctuation">(</span>opt<span class="token punctuation">.</span>error <span class="token operator">&amp;&amp;</span> opt<span class="token punctuation">.</span>error <span class="token keyword">instanceof</span> <span class="token class-name"><span class="token builtin">Function</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                     opt<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>xhr<span class="token punctuation">,</span> res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                 <span class="token punctuation">}</span>
+             <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+     <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li><h1 id="跨域通信的几种方式"><a href="#跨域通信的几种方式" class="headerlink" title="跨域通信的几种方式"></a><strong>跨域通信的几种方式</strong></h1></li>
+</ul>
+<ol>
+<li><h2 id="JSONP-只支持GET请求"><a href="#JSONP-只支持GET请求" class="headerlink" title="JSONP(只支持GET请求)"></a>JSONP(只支持GET请求)</h2></li>
+</ol>
+<blockquote>
+<p>通过 <em>script</em> 标签的异步加载来实现的。利用script标签不受同源策略的限制，天然可以跨域的特性。</p>
+</blockquote>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">var</span> script <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'script'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+script<span class="token punctuation">.</span>type <span class="token operator">=</span> <span class="token string">'text/javascript'</span><span class="token punctuation">;</span>
+script<span class="token punctuation">.</span>src <span class="token operator">=</span> <span class="token string">'https://api.asilu.com/geo/&amp;callback=jsonp'</span><span class="token punctuation">;</span><span class="token comment">//这个是获取当前经纬度的接口</span>
+document<span class="token punctuation">.</span>head<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>script<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//创建并添加script标签到&lt;head&gt;下</span>
+<span class="token comment">// 回调执行函数</span>
+<span class="token keyword">function</span> <span class="token function">jsonp</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//打印jsonp返回的信息</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ol>
+<li><h1 id="Hash"><a href="#Hash" class="headerlink" title="Hash"></a>Hash</h1></li>
+</ol>
+<blockquote>
+<p>url的#后面的内容就叫Hash。Hash的改变，页面不会刷新。</p>
+</blockquote>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">// 在A中伪代码如下：</span>
+<span class="token keyword">var</span> <span class="token constant">B</span> <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">'iframe'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token constant">B</span><span class="token punctuation">.</span>src <span class="token operator">=</span> <span class="token constant">B</span><span class="token punctuation">.</span>src <span class="token operator">+</span> <span class="token string">'#'</span> <span class="token operator">+</span> <span class="token string">'data'</span><span class="token punctuation">;</span>
+<span class="token comment">// 在B中的伪代码如下</span>
+window<span class="token punctuation">.</span><span class="token function-variable function">onhashchange</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> data <span class="token operator">=</span> window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>hash<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ol>
+<li><h1 id="postMessage"><a href="#postMessage" class="headerlink" title="postMessage"></a>postMessage</h1></li>
+</ol>
+<blockquote>
+<p>H5中新增的postMessage()方法，可以用来做跨域通信</p>
+</blockquote>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">// 在A窗口中操作如下：向B窗口发送数据</span>
+    Bwindow<span class="token punctuation">.</span><span class="token function">postMessage</span><span class="token punctuation">(</span><span class="token string">'data'</span><span class="token punctuation">,</span> <span class="token string">'http://B.com'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//这里强调的是B窗口里的window对象</span>
+<span class="token comment">// 在窗口B中监听 message 事件</span>
+    Awindow<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'message'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>   <span class="token comment">//这里强调的是A窗口里的window对象</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>origin<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//获取 ：A窗口url</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>source<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//获取：A window对象</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">//获取传过来的数据</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ol>
+<li><h1 id="WebSocket"><a href="#WebSocket" class="headerlink" title="WebSocket"></a>WebSocket</h1></li>
+</ol>
+<blockquote>
+<p>WebSocket protocol是HTML5一种新的协议。它实现了浏览器与服务器全双工通信，同时允许跨域通讯，是server push技术的一种很好的实现</p>
+</blockquote>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">var</span> ws <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">WebSocket</span><span class="token punctuation">(</span><span class="token string">'wss://echo.websocket.org'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ws<span class="token punctuation">.</span><span class="token function-variable function">onopen</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">evt</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Connection open ...'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  ws<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'Hello WebSockets!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+ws<span class="token punctuation">.</span><span class="token function-variable function">onmessage</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">evt</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Received Message: '</span><span class="token punctuation">,</span> evt<span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  ws<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+ws<span class="token punctuation">.</span><span class="token function-variable function">onclose</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">evt</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Connection closed.'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ol>
+<li><h1 id="CORS-现代浏览器普遍跨域解决方案"><a href="#CORS-现代浏览器普遍跨域解决方案" class="headerlink" title="CORS(现代浏览器普遍跨域解决方案)"></a>CORS(现代浏览器普遍跨域解决方案)</h1></li>
+</ol>
+<blockquote>
+<p>整个CORS通信过程，都是浏览器自动完成，不需要用户参与。对于开发者来说，CORS通信与同源的AJAX通信没有差别，代码完全一样。浏览器一旦发现AJAX请求跨源，就会自动添加一些附加的头信息，有时还会多出一次附加的请求，但用户不会有感觉。因此，实现CORS通信的关键是服务器。只要服务器实现了CORS接口，就可以跨源通信</p>
+</blockquote>
 
                 
             </div>
@@ -525,7 +632,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">小吴</a>
+                    <a href="/about" rel="external nofollow noreferrer">小吴同学</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -535,7 +642,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/06/21/git%E8%BF%9E%E6%8E%A5gitee(%E7%A0%81%E4%BA%91)/">http://example.com/2022/06/21/git%E8%BF%9E%E6%8E%A5gitee(%E7%A0%81%E4%BA%91)/</a>
+                    <a href="http://example.com/2022/06/21/%E5%89%8D%E7%AB%AF%E9%80%9A%E4%BF%A1Ajax/">http://example.com/2022/06/21/%E5%89%8D%E7%AB%AF%E9%80%9A%E4%BF%A1Ajax/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -548,7 +655,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">小吴</a>
+                    <a href="/about" target="_blank">小吴同学</a>
                     !
                 </span>
             </div>
@@ -749,19 +856,19 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2022/06/21/git%E8%BF%9E%E6%8E%A5gitee(%E7%A0%81%E4%BA%91)/">
+                <a href="/2022/06/21/%E5%89%8D%E7%AB%AF%E9%80%9A%E4%BF%A1Ajax/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="前端通信Ajax">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">前端通信Ajax</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            坚硬的城市没有柔软的爱情,生活不是林黛玉,不是因为忧伤就可以风情万种.
                         
                     </div>
                     <div class="publish-info">
@@ -771,7 +878,7 @@
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            小吴
+                            小吴同学
                             
                         </span>
                     </div>
@@ -787,13 +894,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/06/21/wenzhang/">
+                <a href="/2022/06/21/hello-world/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="git链接gitee">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="认识hexo">
                         
-                        <span class="card-title">git链接gitee</span>
+                        <span class="card-title">认识hexo</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
