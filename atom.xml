@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-06-21T05:53:18.707Z</updated>
+  <updated>2022-06-21T06:03:59.606Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python数据库报错</title>
+    <link href="http://example.com/2022/06/21/Python%20ConnectionAbortedError%20[WinError%2010053]%20%E6%82%A8%E7%9A%84%E4%B8%BB%E6%9C%BA%E4%B8%AD%E7%9A%84%E8%BD%AF%E4%BB%B6%E4%B8%AD%E6%AD%A2%E4%BA%86%E4%B8%80%E4%B8%AA%E5%B7%B2%E5%BB%BA%E7%AB%8B%E7%9A%84%E8%BF%9E%E6%8E%A5.(%E5%B0%B1%E6%98%AF%E9%93%BE%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98%E8%87%AA%E5%B7%B1%E8%BF%9E%E7%9D%80%E6%96%AD%E6%8E%89%E4%BA%86)/"/>
+    <id>http://example.com/2022/06/21/Python%20ConnectionAbortedError%20[WinError%2010053]%20%E6%82%A8%E7%9A%84%E4%B8%BB%E6%9C%BA%E4%B8%AD%E7%9A%84%E8%BD%AF%E4%BB%B6%E4%B8%AD%E6%AD%A2%E4%BA%86%E4%B8%80%E4%B8%AA%E5%B7%B2%E5%BB%BA%E7%AB%8B%E7%9A%84%E8%BF%9E%E6%8E%A5.(%E5%B0%B1%E6%98%AF%E9%93%BE%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98%E8%87%AA%E5%B7%B1%E8%BF%9E%E7%9D%80%E6%96%AD%E6%8E%89%E4%BA%86)/</id>
+    <published>2022-06-21T06:03:27.255Z</published>
+    <updated>2022-06-21T06:03:59.606Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Python-ConnectionAbortedError-WinError-10053-您的主机中的软件中止了一个已建立的连接-就是链接数据库出现的问题自己连着断掉了&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>前端通信Ajax</title>
@@ -66,7 +87,7 @@
     <link href="http://example.com/2022/06/21/wenzhang/"/>
     <id>http://example.com/2022/06/21/wenzhang/</id>
     <published>2022-06-21T03:55:58.991Z</published>
-    <updated>2022-06-21T05:42:44.808Z</updated>
+    <updated>2022-06-21T05:58:51.957Z</updated>
     
     
       
